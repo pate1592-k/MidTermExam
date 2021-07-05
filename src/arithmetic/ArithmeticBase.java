@@ -20,8 +20,15 @@ public class ArithmeticBase
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
-        String s= sc.next();
-        switch (s.toUpperCase()) 
+        String o = sc.next();
+        
+         enum calculate{
+            PLUS,
+            MINUS,
+            TIMES,
+            DIVIDE
+        }
+        switch (o.toUpperCase()) 
         {
             case "PLUS":
                 return x + y;
